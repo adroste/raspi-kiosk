@@ -13,6 +13,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
-*/2 * * * * root /home/pi/check_inet.sh
-20 22 * * * root pkill midori
+*/5 07-23 * * * root /home/pi/check_inet.sh
+00 23 * * * root pkill midori
+02 23 * * * root /home/pi/clean_midori_cache.sh
 30 6 * * * root shutdown -r now

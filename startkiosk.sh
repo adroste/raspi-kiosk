@@ -17,5 +17,5 @@ matchbox-window-manager -use_cursor no -use_titlebar no &
 #matchbox-window-manager &
 
 # run browser
-midori -e Fullscreen -e ZoomIn -e ZoomIn -a "http://reservierung.tennisclub-braunlage.de/"
+midori -i 720 -e Fullscreen -e ZoomIn -e ZoomIn -a "http://reservierung.tennisclub-braunlage.de/"
 

@@ -83,3 +83,7 @@ echo "bcm2835_wdt" | sudo tee -a /etc/modules
    sudo systemctl start watchdog.service
    ```
 
+
+## troubleshooting
+
+* adding default route via ppp0: `sudo route add default dev ppp0`
